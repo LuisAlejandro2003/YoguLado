@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #223D6A;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.upchiapas.yogulado.controllers.MenuController">
+   <children>
+      <Button layoutY="-4.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="600.0" style="-fx-background-color: #1C2D49;" text="Menu" textFill="WHITE">
+         <font>
+            <Font name="Century" size="27.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="105.0" fitWidth="114.0" layoutX="30.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets.img/oreo.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="204.0" layoutY="121.0" text="Oreo" textFill="WHITE">
+         <font>
+            <Font name="Forte" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="48.0" text="Sabores" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Dubai Light" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="429.0" layoutY="48.0" text="Precio" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Dubai Light" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="425.0" layoutY="121.0" text="\$80.00" textFill="WHITE">
+         <font>
+            <Font name="Forte" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="105.0" fitWidth="114.0" layoutX="30.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets.img/yogur.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="177.0" layoutY="220.0" text="Yogurt con zarzamora" textFill="WHITE">
+         <font>
+            <Font name="Forte" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="425.0" layoutY="220.0" text="\\$80.00" textFill="WHITE">
+         <font>
+            <Font name="Forte" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
