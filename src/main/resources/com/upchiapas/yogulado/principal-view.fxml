@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="984.0" style="-fx-background-color: #8ABCC2;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="984.0" style="-fx-background-color: #8ABCC2;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.upchiapas.yogulado.controllers.PrincipalController">
    <children>
       <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" layoutX="45.0" layoutY="155.0" text="Pasion por los" textFill="WHITE" textOverrun="CLIP">
          <font>
@@ -18,22 +18,22 @@
             <Font name="Calibri Bold" size="46.0" />
          </font>
       </Label>
-      <Label layoutX="212.0" layoutY="71.0" text="Menu" textFill="#fffefe" underline="true">
+      <Label fx:id="blMenu" layoutX="179.0" layoutY="71.0" onMouseClicked="#lbMenuMouseClicked" text="Menu" textFill="#fffefe" underline="true">
          <font>
             <Font name="Calisto MT" size="27.0" />
          </font>
       </Label>
-      <Label layoutX="364.0" layoutY="70.0" text="Contacto" textFill="#fffefe" underline="true">
+      <Label fx:id="blContacto" layoutX="292.0" layoutY="71.0" onMouseClicked="#lblContactoMouseClicked" text="Contacto" textFill="#fffefe" underline="true">
          <font>
             <Font name="Calisto MT" size="27.0" />
          </font>
       </Label>
-      <Label layoutX="44.0" layoutY="69.0" text="Inicio" textFill="WHITE" underline="true">
+      <Label fx:id="bInicio" layoutX="44.0" layoutY="69.0" onMouseClicked="#lblInicioMouseClicked" text="Inicio" textFill="WHITE" underline="true">
          <font>
             <Font name="Calisto MT" size="27.0" />
          </font>
       </Label>
-      <ImageView fitHeight="503.0" fitWidth="425.0" layoutX="558.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="503.0" fitWidth="425.0" layoutX="558.0" layoutY="-7.0" pickOnBounds="true">
          <image>
             <Image url="@assets.img/logo.jpeg" />
          </image>
@@ -63,5 +63,10 @@
             <Image url="@assets.img/logo.png" />
          </image>
       </ImageView>
+      <Label fx:id="lblSalir" layoutX="430.0" layoutY="71.0" onMouseClicked="#lblSalirMouseClicked" text="Salir" textFill="#fffefe" underline="true">
+         <font>
+            <Font name="Calisto MT" size="27.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
