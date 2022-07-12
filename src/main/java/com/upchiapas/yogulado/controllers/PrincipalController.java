@@ -1,8 +1,10 @@
 package com.upchiapas.yogulado.controllers;
 
+import com.upchiapas.yogulado.Main;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
+
 
 public class PrincipalController {
 
@@ -13,15 +15,10 @@ public class PrincipalController {
     private Label blContacto;
 
     @FXML
-    private Label blMenu;
-
-    @FXML
     private Label lblSalir;
 
     @FXML
-    void lbMenuMouseClicked(MouseEvent event) {
-
-    }
+    private Label lbl_menu;
 
     @FXML
     void lblContactoMouseClicked(MouseEvent event) {
@@ -35,8 +32,11 @@ public class PrincipalController {
 
     @FXML
     void lblSalirMouseClicked(MouseEvent event) {
-        System.exit(1);
+
     }
 
+    @FXML
+    void lbl_irMenuClicked(MouseEvent event) {
+        Main.setFXML("Menu","Menu");
+    }
 }
-

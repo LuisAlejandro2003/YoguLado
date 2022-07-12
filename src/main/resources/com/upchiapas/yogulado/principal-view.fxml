@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="984.0" style="-fx-background-color: #8ABCC2;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.upchiapas.yogulado.controllers.PrincipalController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="984.0" styleClass="backgroundColor" stylesheets="@gradient1.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.upchiapas.yogulado.controllers.PrincipalController">
    <children>
       <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" layoutX="45.0" layoutY="155.0" text="Pasion por los" textFill="WHITE" textOverrun="CLIP">
          <font>
@@ -18,7 +18,7 @@
             <Font name="Calibri Bold" size="46.0" />
          </font>
       </Label>
-      <Label fx:id="blMenu" layoutX="179.0" layoutY="71.0" onMouseClicked="#lbMenuMouseClicked" text="Menu" textFill="#fffefe" underline="true">
+      <Label fx:id="lbl_menu" layoutX="172.0" layoutY="71.0" onMouseClicked="#lbl_irMenuClicked" text="Menu" textFill="#fffefe" underline="true">
          <font>
             <Font name="Calisto MT" size="27.0" />
          </font>
@@ -33,9 +33,9 @@
             <Font name="Calisto MT" size="27.0" />
          </font>
       </Label>
-      <ImageView fitHeight="503.0" fitWidth="425.0" layoutX="558.0" layoutY="-7.0" pickOnBounds="true">
+      <ImageView fitHeight="527.0" fitWidth="445.0" layoutX="537.0" layoutY="-21.0" pickOnBounds="true">
          <image>
-            <Image url="@assets.img/logo.jpeg" />
+            <Image url="@assets.img/img.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="31.0" fitWidth="33.0" layoutX="506.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true">
