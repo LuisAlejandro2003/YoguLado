@@ -8,7 +8,7 @@ public class Helado {
     protected String sabor;
     protected double precio;
 
-    public Helado(String nombre, LocalDate fechaNacimiento) {
+    public Helado(String sabor, double precio) {
         index++;
         this.id = index;
         this.sabor = sabor;
