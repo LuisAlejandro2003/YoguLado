@@ -1,13 +1,12 @@
 package com.upchiapas.yogulado.models;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class Cliente {
     private static int index = 0;
     private int id;
     private String nombre;
-    private ArrayList<Helado> listaHelados = new ArrayList<>();
+    private static ArrayList<Helado> listaHelados = new ArrayList<>();
 
     public Cliente(String nombre) {
         index++;
@@ -41,7 +40,7 @@ public class Cliente {
             helado = listaHelados   .get(0);
         return helado;
     }
-    public ArrayList<Helado> getPets(){
+    public ArrayList<Helado> getHelado(){
         return listaHelados;
     }
 }

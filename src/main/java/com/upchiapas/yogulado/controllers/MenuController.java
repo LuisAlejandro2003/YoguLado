@@ -23,12 +23,11 @@ public class MenuController {
 
     @FXML
     void lbl_agregarOreo(MouseEvent event) {
-
+        /*
         listaHelado.add(new Helado("Oreo", 80));
         txt_AreaImpresion.setText("");
         for (Helado helado:listaHelado) {
             txt_AreaImpresion.appendText(String.valueOf(helado.getSabor()) +""+ helado.getPrecio()+"\n");
-            //txt_AreaImpresion.appendText(String.valueOf(helado.getPrecio()) + "\n");
-        }
+        }*/
     }
 }

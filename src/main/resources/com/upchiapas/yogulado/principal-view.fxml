@@ -18,37 +18,37 @@
             <Font name="Calibri Bold" size="46.0" />
          </font>
       </Label>
-      <Label fx:id="lbl_menu" layoutX="172.0" layoutY="71.0" onMouseClicked="#lbl_irMenuClicked" text="Menu" textFill="#fffefe" underline="true">
+      <Label fx:id="lbl_menu" layoutX="172.0" layoutY="79.0" onMouseClicked="#lbl_irMenuClicked" text="Menu" textFill="#fffefe" underline="true">
          <font>
             <Font name="Calisto MT" size="27.0" />
          </font>
       </Label>
-      <Label fx:id="blContacto" layoutX="292.0" layoutY="71.0" onMouseClicked="#lblContactoMouseClicked" text="Contacto" textFill="#fffefe" underline="true">
+      <Label fx:id="blContacto" layoutX="290.0" layoutY="79.0" onMouseClicked="#lblContactoMouseClicked" text="Contacto" textFill="#fffefe" underline="true">
          <font>
             <Font name="Calisto MT" size="27.0" />
          </font>
       </Label>
-      <Label fx:id="bInicio" layoutX="44.0" layoutY="69.0" onMouseClicked="#lblInicioMouseClicked" text="Inicio" textFill="WHITE" underline="true">
+      <Label fx:id="bInicio" layoutX="44.0" layoutY="79.0" onMouseClicked="#lblInicioMouseClicked" text="Inicio" textFill="WHITE" underline="true">
          <font>
             <Font name="Calisto MT" size="27.0" />
          </font>
       </Label>
-      <ImageView fitHeight="527.0" fitWidth="445.0" layoutX="537.0" layoutY="-21.0" pickOnBounds="true">
+      <ImageView fitHeight="495.0" fitWidth="407.0" layoutX="577.0" pickOnBounds="true">
          <image>
             <Image url="@assets.img/img.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="31.0" fitWidth="33.0" layoutX="506.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="31.0" fitWidth="33.0" layoutX="477.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@assets.img/1.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="31.0" fitWidth="33.0" layoutX="505.0" layoutY="253.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="31.0" fitWidth="33.0" layoutX="477.0" layoutY="254.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@assets.img/1.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="31.0" fitWidth="33.0" layoutX="506.0" layoutY="315.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="31.0" fitWidth="33.0" layoutX="477.0" layoutY="319.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@assets.img/1.png" />
          </image>
@@ -58,12 +58,12 @@
             <Font name="Calibri Bold" size="46.0" />
          </font>
       </Label>
-      <ImageView fitHeight="84.0" fitWidth="154.0" layoutX="2.0" layoutY="-16.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="84.0" fitWidth="154.0" layoutX="8.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@assets.img/logo.png" />
          </image>
       </ImageView>
-      <Label fx:id="lblSalir" layoutX="430.0" layoutY="71.0" onMouseClicked="#lblSalirMouseClicked" text="Salir" textFill="#fffefe" underline="true">
+      <Label fx:id="lblSalir" layoutX="424.0" layoutY="79.0" onMouseClicked="#lblSalirMouseClicked" text="Salir" textFill="#fffefe" underline="true">
          <font>
             <Font name="Calisto MT" size="27.0" />
          </font>

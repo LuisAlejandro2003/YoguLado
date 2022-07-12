@@ -2,13 +2,12 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="658.0" prefWidth="600.0" styleClass="backgroundColor" stylesheets="@gradient1.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.upchiapas.yogulado.controllers.MenuController">
+<AnchorPane prefHeight="472.0" prefWidth="600.0" styleClass="backgroundColor" stylesheets="@gradient1.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.upchiapas.yogulado.controllers.MenuController">
    <children>
       <Button layoutY="-4.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="600.0" styleClass="backgroundColor" stylesheets="@gradient2.css" text="Menu">
          <font>
@@ -45,7 +44,7 @@
             <Image url="@assets.img/clasico.jpg" />
          </image>
       </ImageView>
-      <Button fx:id="btn_irCarrito" layoutX="24.0" layoutY="588.0" mnemonicParsing="false" onMouseClicked="#irCarritoClicked" prefHeight="42.0" prefWidth="125.0" styleClass="backgroundColor" stylesheets="@gradient2.css" text="Pedir" />
+      <Button fx:id="btn_irCarrito" layoutX="232.0" layoutY="403.0" mnemonicParsing="false" onMouseClicked="#irCarritoClicked" prefHeight="42.0" prefWidth="125.0" styleClass="backgroundColor" stylesheets="@gradient2.css" text="Carrito" />
       <Label layoutX="457.0" layoutY="126.0" text="\$80.00" textAlignment="CENTER">
          <font>
             <Font name="Dubai Light" size="20.0" />
@@ -61,7 +60,7 @@
             <Font name="Dubai Light" size="20.0" />
          </font>
       </Label>
-      <Label layoutX="248.0" layoutY="114.0" onMouseClicked="#lbl_agregarOreo" text="Oreo" textAlignment="CENTER">
+      <Label layoutX="248.0" layoutY="114.0" text="Oreo" textAlignment="CENTER">
          <font>
             <Font name="Dubai Light" size="20.0" />
          </font>
@@ -76,6 +75,5 @@
             <Font name="Dubai Light" size="20.0" />
          </font>
       </Label>
-      <TextArea fx:id="txt_AreaImpresion" layoutX="200.0" layoutY="401.0" prefHeight="200.0" prefWidth="200.0" />
    </children>
 </AnchorPane>
