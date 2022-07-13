@@ -1,13 +1,18 @@
 package com.upchiapas.yogulado;
 
+import com.upchiapas.yogulado.models.Cliente;
+import com.upchiapas.yogulado.models.Helado;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class Main extends Application {
+    public static ArrayList<Cliente> listaClientes = new ArrayList<Cliente>();
+    public  static ArrayList<Helado> listaHelados = new ArrayList<>();
     private static Stage stage;
     private static Scene scene;
     @Override

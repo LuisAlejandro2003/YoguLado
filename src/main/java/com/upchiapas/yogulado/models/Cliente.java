@@ -2,11 +2,13 @@ package com.upchiapas.yogulado.models;
 
 import java.util.ArrayList;
 
+import static com.upchiapas.yogulado.Main.listaHelados;
+
 public class Cliente {
     private static int index = 0;
     private int id;
     private String nombre;
-    private static ArrayList<Helado> listaHelados = new ArrayList<>();
+    //private static ArrayList<Helado> listaHelados = new ArrayList<>();
 
     public Cliente(String nombre) {
         index++;
