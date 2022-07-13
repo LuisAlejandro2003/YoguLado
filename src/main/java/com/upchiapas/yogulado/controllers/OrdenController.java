@@ -37,7 +37,7 @@ public class OrdenController {
     @FXML
     private TextField txt_nombreCliente;
 
-
+    private double total=0;
 
     @FXML
     void btn_agregarOreo(MouseEvent event) {
@@ -46,12 +46,14 @@ public class OrdenController {
         cliente = new Cliente(nombre);
         listaClientes.add(cliente); //Agrega cliente al array
         addHeladoOreo(cliente); //Agrega helado a cliente
+        total+=80.0;
         for (Cliente cliente1 : listaClientes){
                txt_areaPedido.setText("");
                 for (Helado helado: cliente.getHelado()) {
                     txt_areaPedido.appendText(String.valueOf( helado.getId() + " " + helado.getSabor()) + " " + helado.getPrecio()+ "\n");
                 }
         }
+        txt_areaPedido.appendText("    total:  "+ String.valueOf(total));
     }
     private static boolean addHeladoOreo(Cliente cliente){
 
@@ -75,12 +77,14 @@ public class OrdenController {
         cliente = new Cliente(nombre);
         listaClientes.add(cliente); //Agrega cliente al array
         addHeladoZarzamora(cliente); //Agrega helado a cliente
+        total+=120.0;
         for (Cliente cliente1 : listaClientes){
             txt_areaPedido.setText("");
             for (Helado helado: cliente.getHelado()) {
                 txt_areaPedido.appendText(String.valueOf( helado.getId() + " " + helado.getSabor()) + " " + helado.getPrecio()+ "\n");
             }
         }
+        txt_areaPedido.appendText("    total:  "+ String.valueOf(total));
 
     }
 
@@ -92,20 +96,26 @@ public class OrdenController {
 
     @FXML
     void btn_agregarVainilla(MouseEvent event) {
+
         String nombre= this.txt_nombreCliente.getText();
         Cliente cliente;
         cliente = new Cliente(nombre);
         listaClientes.add(cliente); //Agrega cliente al array
         addHeladoVainilla(cliente); //Agrega helado a cliente
+        total+=85.0;
         for (Cliente cliente1 : listaClientes){
             txt_areaPedido.setText("");
             for (Helado helado: cliente.getHelado()) {
-                txt_areaPedido.appendText(String.valueOf( helado.getId() + " " + helado.getSabor()) + " " + helado.getPrecio()+ "\n");
+                txt_areaPedido.appendText(String.valueOf( helado.getId() + " " + helado.getSabor()) + " " + helado.getPrecio() +  "\n");
             }
         }
-
+         txt_areaPedido.appendText("    total:  "+ String.valueOf(total));
     }
     private static boolean addHeladoVainilla(Cliente cliente){
         return cliente.addHelado(new Helado("Vainilla",85));
+    }
+
+    public double getTotal() {
+        return total;
     }
 }
