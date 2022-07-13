@@ -16,7 +16,7 @@
                   <Font name="Dubai Light" size="24.0" />
                </font>
             </Label>
-            <Button fx:id="btn_irCarrito" layoutX="227.0" layoutY="421.0" mnemonicParsing="false" onMouseClicked="#irCarritoClicked" prefHeight="26.0" prefWidth="107.0" styleClass="backgroundColor" stylesheets="@gradient2.css" text="Finalizar Pedido" />
+            <Button fx:id="btn_finalizar" layoutX="227.0" layoutY="421.0" mnemonicParsing="false" onMouseClicked="#btn_irFinalizarClicked" prefHeight="26.0" prefWidth="107.0" styleClass="backgroundColor" stylesheets="@gradient2.css" text="Finalizar Pedido" />
             <Button fx:id="btn_oreo" layoutX="44.0" layoutY="189.0" mnemonicParsing="false" onMouseClicked="#btn_agregarOreo" prefHeight="23.0" prefWidth="71.0" styleClass="backgroundColor" stylesheets="@gradient2.css" text="Agregar" />
             <TextArea fx:id="txt_areaPedido" layoutX="133.0" layoutY="229.0" prefHeight="167.0" prefWidth="296.0" />
             <Label layoutX="60.0" layoutY="143.0" text="Oreo" textAlignment="CENTER">

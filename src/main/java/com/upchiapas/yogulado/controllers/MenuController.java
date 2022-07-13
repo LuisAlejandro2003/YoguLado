@@ -40,10 +40,7 @@ public class MenuController {
       // Main.setFXML("Orden-view","Carrito");
     }
 
-    @FXML
-    void lbl_agregarOreo(MouseEvent event) {
 
-    }
 
 
 }

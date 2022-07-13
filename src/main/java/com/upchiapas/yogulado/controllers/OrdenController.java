@@ -24,9 +24,8 @@ public class OrdenController {
 
     @FXML
     private Button btn_zarzamora;
-
     @FXML
-    private Button btn_irCarrito;
+    private Button btn_finalizar;
 
     @FXML
     private Button btn_oreo;
@@ -114,7 +113,10 @@ public class OrdenController {
     private static boolean addHeladoVainilla(Cliente cliente){
         return cliente.addHelado(new Helado("Vainilla",85));
     }
-
+    public void btn_irFinalizarClicked(MouseEvent mouseEvent) {
+      Main.setFXML("Cobro-view","Cobro");
+    }
+    @FXML
     public double getTotal() {
         return total;
     }
