@@ -35,7 +35,7 @@ public class PrincipalController {
 
     @FXML
     void lblSalirMouseClicked(MouseEvent event) {
-
+        System.exit(1);
     }
 
     @FXML
@@ -44,7 +44,7 @@ public class PrincipalController {
     }
     @FXML
     void btn_irAdmin(MouseEvent event) {
-        Main.setFXML("admin-view","Administrador");
+        Main.setFXML("Login-view","Administrador");
     }
 
 }

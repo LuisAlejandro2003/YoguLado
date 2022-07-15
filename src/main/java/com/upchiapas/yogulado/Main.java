@@ -42,6 +42,7 @@ public class Main extends Application {
         stage.setResizable(false);
         stage.setTitle(title);
     }
+
     public static void main(String[] args) {
         launch();
     }
