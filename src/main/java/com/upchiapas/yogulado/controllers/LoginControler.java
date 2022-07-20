@@ -51,7 +51,7 @@ public class LoginControler {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setHeaderText(null);
             alert.setTitle("Acceso- error");
-            alert.setContentText("Usuario no existe");
+            alert.setContentText("El usuario no existe");
             alert.showAndWait();
         }
     }

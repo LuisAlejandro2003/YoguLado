@@ -2,20 +2,21 @@ package com.upchiapas.yogulado.models;
 
 import java.util.ArrayList;
 
-import static com.upchiapas.yogulado.Main.listaHelados;
 
 public class Cliente {
     private static int index = 0;
     private int id;
     private String nombre;
-    //private static ArrayList<Helado> listaHelados = new ArrayList<>();
+    private ArrayList<Helado> listaHelados = new ArrayList<>();
 
-    public Cliente(String nombre) {
+    public Cliente(String nombre , ArrayList<Helado> listaHeladosTemporal) {
         index++;
         this.id = index;
         this.nombre = nombre;
+        for (Helado helado : listaHeladosTemporal){
+            listaHelados.add(helado);
+        }
     }
-
     public int getId() {
         return id;
     }
@@ -36,12 +37,6 @@ public class Cliente {
         return listaHelados.add(helado);
     }
 
-    public Helado getFirstHelado(){
-        Helado helado = null;
-        if (!listaHelados.isEmpty())
-            helado = listaHelados   .get(0);
-        return helado;
-    }
     public ArrayList<Helado> getHelado(){
         return listaHelados;
     }

@@ -19,17 +19,12 @@
             <Font name="Calibri Bold" size="46.0" />
          </font>
       </Label>
-      <Label fx:id="lbl_menu" layoutX="172.0" layoutY="79.0" onMouseClicked="#lbl_irMenuClicked" text="Menu" textFill="#fffefe" underline="true">
+      <Label fx:id="lbl_menu" layoutX="67.0" layoutY="79.0" onMouseClicked="#lbl_irMenuClicked" text="Menu" textFill="#fffefe" underline="true">
          <font>
             <Font name="Calisto MT" size="27.0" />
          </font>
       </Label>
-      <Label fx:id="blContacto" layoutX="290.0" layoutY="79.0" onMouseClicked="#lblContactoMouseClicked" text="Contacto" textFill="#fffefe" underline="true">
-         <font>
-            <Font name="Calisto MT" size="27.0" />
-         </font>
-      </Label>
-      <Label fx:id="bInicio" layoutX="44.0" layoutY="79.0" onMouseClicked="#lblInicioMouseClicked" text="Inicio" textFill="WHITE" underline="true">
+      <Label fx:id="blContacto" layoutX="192.0" layoutY="79.0" onMouseClicked="#lblContactoMouseClicked" text="Contacto" textFill="#fffefe" underline="true">
          <font>
             <Font name="Calisto MT" size="27.0" />
          </font>
@@ -64,7 +59,7 @@
             <Image url="@assets.img/logo.png" />
          </image>
       </ImageView>
-      <Label fx:id="lblSalir" layoutX="424.0" layoutY="79.0" onMouseClicked="#lblSalirMouseClicked" text="Salir" textFill="#fffefe" underline="true">
+      <Label fx:id="lblSalir" layoutX="348.0" layoutY="79.0" onMouseClicked="#lblSalirMouseClicked" text="Salir" textFill="#fffefe" underline="true">
          <font>
             <Font name="Calisto MT" size="27.0" />
          </font>

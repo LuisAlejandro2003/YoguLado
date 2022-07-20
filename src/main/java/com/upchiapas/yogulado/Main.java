@@ -13,13 +13,14 @@ import java.util.ArrayList;
 public class Main extends Application {
     public static ArrayList<Cliente> listaClientes = new ArrayList<Cliente>();
     public  static ArrayList<Helado> listaHelados = new ArrayList<>();
+
     private static Stage stage;
     private static Scene scene;
     @Override
     public void start(Stage stage) throws IOException {
         this.stage = stage;
         scene = new Scene(loadFXML("principal-view"));
-        stage.setTitle("Inicio");
+        stage.setTitle("YoguLado ---- inicio");
         stage.setScene(scene);
         stage.centerOnScreen(); // Centra la pantalla en tiempo de ejecución
         stage.setResizable(false);  // Impide que el usuario pueda modificar el tamaño del formulario

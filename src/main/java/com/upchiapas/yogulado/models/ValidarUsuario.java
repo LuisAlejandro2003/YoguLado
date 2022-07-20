@@ -5,8 +5,8 @@ public class ValidarUsuario {
     private ArrayList<Usuario> usuarios = new ArrayList<>();
 
     public ValidarUsuario() {
-        usuarios.add(new Usuario("Nancy Jimenez", "nancyjimenez", "1234"));
-        usuarios.add(new Usuario("Alejandro Montoya", "alemontoya", "4321"));
+        usuarios.add(new Usuario("Nancy Jimenez", "nan", "1234"));
+
     }
 
     public boolean validarUsusario(String usuarioNombre, String contrasenia) {
