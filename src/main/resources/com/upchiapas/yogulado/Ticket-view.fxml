@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="390.0" prefWidth="315.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="142.0" layoutY="33.0" text="Ticket" />
+      <Label layoutX="48.0" layoutY="87.0" text="Nombre " />
+      <Label layoutX="48.0" layoutY="136.0" text="Productos" />
+      <Label layoutX="48.0" layoutY="248.0" text="Total" />
+      <Label layoutX="48.0" layoutY="285.0" text="Pago" />
+      <Label layoutX="48.0" layoutY="321.0" text="Cambio" />
+   </children>
+</AnchorPane>
