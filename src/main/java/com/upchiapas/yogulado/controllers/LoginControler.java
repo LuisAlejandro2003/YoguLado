@@ -34,14 +34,14 @@ public class LoginControler {
     void btnIniciarSesionOnMouseClicked(MouseEvent event) {
         ValidarUsuario validarUsuario=new ValidarUsuario();
         if (validarUsuario.validarUsusario(txtUsuario.getText(),txtContraseña.getText())){
-            FXMLLoader loader = new FXMLLoader(Main.class.getResource("admin-view.fxml"));
+            FXMLLoader loader = new FXMLLoader(Main.class.getResource("Admin-view.fxml"));
             Parent root = null;
             try {
                 root =loader.load();
             } catch (IOException e){
                 throw new RuntimeException(e);
             }
-             AdminController controlador = loader.getController();
+            AdminController controlador = loader.getController();
             Scene scene = new Scene(root);
             Stage stage = new Stage();
             stage.initModality(Modality.APPLICATION_MODAL);
@@ -54,12 +54,13 @@ public class LoginControler {
             alert.setContentText("El usuario no existe");
             alert.showAndWait();
         }
+
     }
 
     @FXML
     void btnSalirOnMouseClicked(MouseEvent event) {
-        Main.setFXML("principal-view","Principal");
+        Main.setFXML("Principal-view","YoguLado");
     }
-
 }
+
 

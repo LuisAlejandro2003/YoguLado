@@ -11,8 +11,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class Main extends Application {
-    public static ArrayList<Cliente> listaClientes = new ArrayList<Cliente>();
-    public  static ArrayList<Helado> listaHelados = new ArrayList<>();
+    public static ArrayList<Cliente>listaClientes = new ArrayList<>();
+    public static ArrayList<Helado>listaHelados = new ArrayList<>();
 
     private static Stage stage;
     private static Scene scene;

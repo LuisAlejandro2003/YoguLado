@@ -6,45 +6,32 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 
-
 public class PrincipalController {
-
     @FXML
-    private Label bInicio;
-
-    @FXML
-    private Label blContacto;
-
+    private Label lblContacto;
     @FXML
     private Label lblSalir;
+    @FXML
+    private Label lblMenu;
+    @FXML
+    private Button btnAdmin;
 
     @FXML
-    private Label lbl_menu;
-    @FXML
-    private Button btn_admin;
-
+    void lblMenuMouseClicked(MouseEvent event) {
+        Main.setFXML("Menu-view","Menu");
+    }
     @FXML
     void lblContactoMouseClicked(MouseEvent event) {
-
     }
-
-    @FXML
-    void lblInicioMouseClicked(MouseEvent event) {
-
-    }
-
     @FXML
     void lblSalirMouseClicked(MouseEvent event) {
         System.exit(1);
     }
 
     @FXML
-    void lbl_irMenuClicked(MouseEvent event) {
-        Main.setFXML("Menu","Menu");
-    }
-    @FXML
-    void btn_irAdmin(MouseEvent event) {
+    void btnAdminMouseClicked(MouseEvent event) {
         Main.setFXML("Login-view","Administrador");
     }
 
 }
+
