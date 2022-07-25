@@ -58,8 +58,6 @@ public class OrdenController {
 
     public  static ArrayList<Helado> listaHeladosTemporal = new ArrayList<>();
 
-
-
     @FXML
     void btnAgregarOreoMouseClicked(MouseEvent event) {
         indice+=1;
@@ -127,15 +125,10 @@ public class OrdenController {
                 alert.showAndWait();
             }
             else {
-                total=0;
+               total=0;
                 String nombre= this.txtNombreCliente.getText();
                 Cliente cliente = new Cliente(nombre,listaHeladosTemporal, LocalDate.now());
                 listaClientes.add(cliente);
-                Alert alert = new Alert(Alert.AlertType.INFORMATION);
-                alert.setHeaderText(null);
-                alert.setTitle("Correcto");
-                alert.setContentText("Orden generado con exito");
-                alert.showAndWait();
                 txtNombreCliente.setText(" ");
                 txtAreaPedido.setText(" ");
 
@@ -144,7 +137,6 @@ public class OrdenController {
                     total+=helado.getPrecio();
                 }
                 txtAreaPedido.appendText("Este es el total: " + String.valueOf(total));
-
                 FXMLLoader loader = new FXMLLoader(Main.class.getResource("Cobro-view.fxml"));
                 Parent root = null;
                 try {
@@ -161,7 +153,6 @@ public class OrdenController {
                 listaHeladosTemporal.clear();
                 total=0;
             }
-
         }
     }
     @FXML

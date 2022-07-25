@@ -44,7 +44,6 @@ public class Main extends Application {
         stage.setResizable(false);
         stage.setTitle(title);
     }
-
     public double getTotal() {
         return total;
     }

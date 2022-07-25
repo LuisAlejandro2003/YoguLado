@@ -33,7 +33,6 @@ public class AdminController {
             for (Helado helado: cliente.getHelado()) {
                 txtAreaVentas.appendText(String.valueOf( helado.getSabor()) + " $" + helado.getPrecio()+ "\n");
                 ventas+=helado.getPrecio();
-
             }
             i++;
         }

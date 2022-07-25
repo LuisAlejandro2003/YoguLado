@@ -25,7 +25,6 @@ public class CobroController {
     private TextField txtTotal;
     private double pago;
 
-
     @FXML
     void btnPagarMouseClicked(MouseEvent event) {
         pago= Double.parseDouble(txtTotal.getText());
@@ -55,6 +54,5 @@ public class CobroController {
     void imprimirOnMouseMoved(MouseEvent event) {
         lblImprimirTotal.setText("$"+String.valueOf(total));
         lblImprimirTotal.setVisible(true);
-
     }
 }
