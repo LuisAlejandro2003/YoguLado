@@ -87,12 +87,12 @@
          <children>
             <TextField fx:id="txtNombreCliente" layoutX="41.0" layoutY="35.0" prefHeight="34.0" prefWidth="232.0" promptText="Ingresa nombre" />
             <TextArea fx:id="txtAreaPedido" editable="false" layoutX="41.0" layoutY="88.0" prefHeight="62.0" prefWidth="232.0" />
-            <Button fx:id="btnFinalizar" layoutX="322.0" layoutY="35.0" mnemonicParsing="false" onMouseClicked="#btnFinalizarMouseClicked" prefHeight="34.0" prefWidth="232.0" style="-fx-background-color: #ABF6E2; -fx-background-radius: 12px;" styleClass="backgroundColor" stylesheets="@gradient2.css" text="Guardar pedido">
+            <Button fx:id="btnFinalizar" layoutX="322.0" layoutY="16.0" mnemonicParsing="false" onMouseClicked="#btnFinalizarMouseClicked" prefHeight="34.0" prefWidth="232.0" style="-fx-background-color: #ABF6E2; -fx-background-radius: 12px;" styleClass="backgroundColor" stylesheets="@gradient2.css" text="Guardar pedido">
                <font>
                   <Font name="MV Boli" size="17.0" />
                </font>
             </Button>
-            <Button fx:id="btnInicio" layoutX="322.0" layoutY="109.0" mnemonicParsing="false" onMouseClicked="#btnInicioMouseClicked" prefHeight="38.0" prefWidth="232.0" style="-fx-background-color: #ABF6E2; -fx-background-radius: 12px;" styleClass="backgroundColor" stylesheets="@gradient2.css" text="Cancelar / Inicio">
+            <Button fx:id="btnInicio" layoutX="322.0" layoutY="119.0" mnemonicParsing="false" onMouseClicked="#btnInicioMouseClicked" prefHeight="38.0" prefWidth="232.0" style="-fx-background-color: #ABF6E2; -fx-background-radius: 12px;" styleClass="backgroundColor" stylesheets="@gradient2.css" text="Cancelar / Inicio">
                <font>
                   <Font name="MV Boli" size="17.0" />
                </font>
@@ -102,6 +102,11 @@
                   <Font name="Dubai Light" size="16.0" />
                </font>
             </Label>
+            <Button fx:id="btnDeshacer" layoutX="322.0" layoutY="68.0" mnemonicParsing="false" onMouseClicked="#btnDeshacerMouseClicked" prefHeight="38.0" prefWidth="232.0" style="-fx-background-color: #ABF6E2; -fx-background-radius: 12px;" styleClass="backgroundColor" stylesheets="@gradient2.css" text="Atras">
+               <font>
+                  <Font name="MV Boli" size="17.0" />
+               </font>
+            </Button>
          </children>
       </AnchorPane>
    </children>

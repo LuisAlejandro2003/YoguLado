@@ -22,7 +22,6 @@ public class AdminController {
 
     @FXML
     private TextField txtNombre;
-
     @FXML
     void btnVentasMouseClicked(MouseEvent event) {
         double ventas = 0;
@@ -32,7 +31,7 @@ public class AdminController {
             txtAreaVentas.appendText(("\n"+listaClientes.get(i).getFecha() +" \n "+ listaClientes.get(i).getNombre())+"\n");
 
             for (Helado helado: cliente.getHelado()) {
-                txtAreaVentas.appendText(String.valueOf( helado.getSabor()) + " " + helado.getPrecio()+ "\n");
+                txtAreaVentas.appendText(String.valueOf( helado.getSabor()) + " $" + helado.getPrecio()+ "\n");
                 ventas+=helado.getPrecio();
 
             }
@@ -51,8 +50,7 @@ public class AdminController {
             if(listaClientes.get(i).getNombre().matches(".*"+name+".*")){
                 txtAreaNombres.appendText(("\n"+listaClientes.get(i).getFecha() +" \n "+ listaClientes.get(i).getNombre())+"\n");
                 for (Helado helado: cliente.getHelado()) {
-                    txtAreaNombres.appendText(String.valueOf( helado.getSabor()) + "\n");
-
+                    txtAreaNombres.appendText(String.valueOf( helado.getSabor()) +" $"+ helado.getPrecio() + "\n");
                     pedido+=helado.getPrecio();
                 }
                 flag = true;
