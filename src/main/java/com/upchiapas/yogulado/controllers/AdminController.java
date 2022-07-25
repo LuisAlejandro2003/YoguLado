@@ -35,11 +35,8 @@ public class AdminController {
                 txtAreaVentas.appendText(String.valueOf( helado.getSabor()) + " " + helado.getPrecio()+ "\n");
             }
             i++;
-
-
         }
     }
-
     @FXML
     void btnBuscarMouseClicked(MouseEvent event) {
         boolean flag = false;

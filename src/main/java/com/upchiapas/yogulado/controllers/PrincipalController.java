@@ -22,6 +22,7 @@ public class PrincipalController {
     }
     @FXML
     void lblContactoMouseClicked(MouseEvent event) {
+        Main.setFXML("Contacto-view","Menu");
     }
     @FXML
     void lblSalirMouseClicked(MouseEvent event) {
