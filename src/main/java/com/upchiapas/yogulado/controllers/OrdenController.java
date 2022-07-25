@@ -4,17 +4,26 @@ import com.upchiapas.yogulado.Main;
 import com.upchiapas.yogulado.models.Cliente;
 import com.upchiapas.yogulado.models.Helado;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
+
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
+import java.io.IOException;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Objects;
 
 import static com.upchiapas.yogulado.Main.listaClientes;
+import static com.upchiapas.yogulado.Main.loadFXML;
 
 public class OrdenController {
 
@@ -39,9 +48,13 @@ public class OrdenController {
     @FXML
     private TextField txtNombreCliente;
 
-    private double total=0;
+    public static double total=0;
+
 
     public  static ArrayList<Helado> listaHeladosTemporal = new ArrayList<>();
+
+
+
 
     @FXML
     void btnAgregarOreoMouseClicked(MouseEvent event) {
@@ -78,7 +91,7 @@ public class OrdenController {
     }
 
     @FXML
-    void btnFinalizarMouseClicked(MouseEvent event) {
+    void btnFinalizarMouseClicked(MouseEvent event) throws IOException {
         if(Objects.equals(txtNombreCliente.getText(), "")){
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setHeaderText(null);
@@ -86,21 +99,42 @@ public class OrdenController {
             alert.setContentText("Ingrese el nombre de cliente");
             alert.showAndWait();
         } else {
-            String nombre= this.txtNombreCliente.getText();
-            Cliente cliente = new Cliente(nombre,listaHeladosTemporal);
-            listaClientes.add(cliente);
-            Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setHeaderText(null);
-            alert.setTitle("Correcto");
-            alert.setContentText("Orden generado con exito");
-            alert.showAndWait();
-            txtNombreCliente.setText(" ");
-            txtAreaPedido.setText(" ");
-            //Main.setFXML("Cobro-view","Cobro");
-            Main.setFXML("Principal-view","Cobro");
-            Stage stage = (Stage) this.btnFinalizar.getScene().getWindow();
-            stage.close();
-            listaHeladosTemporal.clear();
+            if (txtAreaPedido.getText().isEmpty()){
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setHeaderText(null);
+                alert.setTitle("Error");
+                alert.setContentText("No eligio sus helados");
+                alert.showAndWait();
+            }
+            else {
+                String nombre= this.txtNombreCliente.getText();
+                Cliente cliente = new Cliente(nombre,listaHeladosTemporal, LocalDate.now());
+                listaClientes.add(cliente);
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setHeaderText(null);
+                alert.setTitle("Correcto");
+                alert.setContentText("Orden generado con exito");
+                alert.showAndWait();
+                txtNombreCliente.setText(" ");
+                txtAreaPedido.setText(" ");
+
+                FXMLLoader loader = new FXMLLoader(Main.class.getResource("Cobro-view.fxml"));
+                Parent root = null;
+                try {
+                    root = loader.load();
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+                CobroController controlador = loader.getController();
+                Scene scene = new Scene(root);
+                Stage stage = new Stage();
+                stage.initModality(Modality.APPLICATION_MODAL);
+                stage.setScene(scene);
+                stage.showAndWait();
+                listaHeladosTemporal.clear();
+                total=0;
+            }
+
         }
     }
 
@@ -111,6 +145,7 @@ public class OrdenController {
         stage.close();
         listaHeladosTemporal.clear();
     }
+
     public double getTotal() {
         return total;
     }

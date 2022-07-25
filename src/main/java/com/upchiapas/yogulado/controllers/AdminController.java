@@ -26,26 +26,33 @@ public class AdminController {
 
     @FXML
     void btnVentasMouseClicked(MouseEvent event) {
-        double totalF= ordenController.getTotal();
         int i=0;
         for (Cliente cliente : listaClientes){
-            txtAreaVentas.appendText((listaClientes.get(i).getNombre()));
+            txtAreaVentas.appendText("-----------------------------");
+            txtAreaVentas.appendText(("\n"+listaClientes.get(i).getFecha() +" \n "+ listaClientes.get(i).getNombre())+"\n");
+
             for (Helado helado: cliente.getHelado()) {
-                txtAreaVentas.appendText(String.valueOf( "\n"+helado.getId() + " " + helado.getSabor()) + " " + helado.getPrecio()+ "\n");
+                txtAreaVentas.appendText(String.valueOf( helado.getSabor()) + " " + helado.getPrecio()+ "\n");
             }
             i++;
+
+
         }
     }
+
     @FXML
     void btnBuscarMouseClicked(MouseEvent event) {
-        double totalF= ordenController.getTotal();
         boolean flag = false;
         String name = txtNombre.getText();
         txtAreaNombres.setText(" ");
         int i=0;
         for (Cliente cliente : listaClientes){
-            if(listaClientes.get(i).getNombre().matches("."+name+".")){
-                txtAreaNombres.appendText(("\n"+i+" "+listaClientes.get(i).getNombre()));
+            if(listaClientes.get(i).getNombre().matches(".*"+name+".*")){
+
+                txtAreaNombres.appendText(("\n"+listaClientes.get(i).getFecha() +" \n "+ listaClientes.get(i).getNombre())+"\n");
+                for (Helado helado: cliente.getHelado()) {
+                    txtAreaNombres.appendText(String.valueOf( helado.getSabor()) + " " + helado.getPrecio()+ "\n");
+                }
                 flag = true;
             }
             i++;

@@ -18,19 +18,9 @@ public class MenuController {
 
     @FXML
     void irCarritoMouseClicked(MouseEvent event) {
-        FXMLLoader loader = new FXMLLoader(Main.class.getResource("Orden-view.fxml"));
-        Parent root = null;
-        try {
-            root =loader.load();
-        } catch (IOException e){
-            throw new RuntimeException(e);
-        }
-        OrdenController controlador = loader.getController();
-        Scene scene = new Scene(root);
-        Stage stage = new Stage();
-        stage.initModality(Modality.APPLICATION_MODAL);
-        stage.setScene(scene);
-        stage.showAndWait();
+
+        Main.setFXML("Orden-view","YoguLado");
+      
     }
 
 }

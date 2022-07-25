@@ -12,10 +12,11 @@ import java.util.ArrayList;
 
 public class Main extends Application {
     public static ArrayList<Cliente>listaClientes = new ArrayList<>();
-    public static ArrayList<Helado>listaHelados = new ArrayList<>();
-
     private static Stage stage;
     private static Scene scene;
+
+    public double total;
+
     @Override
     public void start(Stage stage) throws IOException {
         this.stage = stage;
@@ -42,6 +43,10 @@ public class Main extends Application {
         stage.centerOnScreen();
         stage.setResizable(false);
         stage.setTitle(title);
+    }
+
+    public double getTotal() {
+        return total;
     }
 
     public static void main(String[] args) {

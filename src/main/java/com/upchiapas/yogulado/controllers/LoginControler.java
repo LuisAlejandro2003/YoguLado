@@ -54,7 +54,6 @@ public class LoginControler {
             alert.setContentText("El usuario no existe");
             alert.showAndWait();
         }
-
     }
 
     @FXML

@@ -14,7 +14,6 @@ public class ValidarUsuario {
             bandera=true;
         return bandera;
     }
-
     private Usuario encontrarUsuario(String usuarioNombre) { //Recorre todos los elementos del arreglo y retorna el objeto
         Usuario usuario = null;
         int i = 0;

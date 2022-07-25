@@ -5,10 +5,11 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="325.0" prefWidth="333.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.upchiapas.yogulado.controllers.CobroController">
+<AnchorPane onMouseMoved="#imprimirOnMouseMoved" prefHeight="193.0" prefWidth="532.0" style="-fx-background-color: #2D343E;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.upchiapas.yogulado.controllers.CobroController">
    <children>
-      <Button fx:id="btn_verTotal" layoutX="51.0" layoutY="138.0" mnemonicParsing="false" onMouseClicked="#btn_imprimirTotal" text="df" />
-      <Label layoutX="53.0" layoutY="62.0" text="Ingrese la cantidad de efectivo" />
-      <TextField layoutX="51.0" layoutY="96.0" />
+      <Button fx:id="btnVerTotal" layoutX="235.0" layoutY="127.0" mnemonicParsing="false" onMouseClicked="#btnPagarMouseClicked" text="Pagar" />
+      <Label layoutX="177.0" layoutY="40.0" text="Ingrese la cantidad de efectivo" textFill="WHITE" />
+      <TextField fx:id="txtTotal" layoutX="184.0" layoutY="84.0" onMouseClicked="#btnPagarMouseClicked" />
+      <Label fx:id="lblImprimirTotal" layoutX="226.0" layoutY="58.0" prefHeight="18.0" prefWidth="79.0" text="Label" textFill="#fff6f6" visible="false" />
    </children>
 </AnchorPane>
