@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2D343E;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.upchiapas.yogulado.controllers.AdminController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #00C3C9;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.upchiapas.yogulado.controllers.AdminController">
    <children>
       <ImageView fitHeight="252.0" fitWidth="168.0" layoutX="250.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true" rotate="-45.0">
          <image>
